@@ -91,3 +91,5 @@ C:\Users\New User\Documents\Final Project\PriceWatch\PriceWatch\bin\Ninject.Web.
 C:\Users\New User\Documents\Final Project\PriceWatch\PriceWatch\bin\Ninject.Web.Common.WebHost.xml
 C:\Users\New User\Documents\Final Project\PriceWatch\PriceWatch\bin\Ninject.Web.Mvc.xml
 C:\Users\New User\Documents\Final Project\PriceWatch\PriceWatch\obj\Debug\PriceWatch.csprojAssemblyReference.cache
+C:\Users\New User\Documents\Final Project\PriceWatch\PriceWatch\obj\Debug\PriceWatch.Migrations.InitialCreate.resources
+C:\Users\New User\Documents\Final Project\PriceWatch\PriceWatch\obj\Debug\PriceWatch.csproj.GenerateResource.cache
