@@ -73,7 +73,6 @@ C:\Users\New User\Documents\Final Project\PriceWatch\PriceWatch\bin\Antlr3.Runti
 C:\Users\New User\Documents\Final Project\PriceWatch\PriceWatch\bin\System.Diagnostics.DiagnosticSource.xml
 C:\Users\New User\Documents\Final Project\PriceWatch\PriceWatch\bin\Microsoft.AspNet.TelemetryCorrelation.xml
 C:\Users\New User\Documents\Final Project\PriceWatch\PriceWatch\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\New User\Documents\Final Project\PriceWatch\PriceWatch\obj\Debug\PriceWatch.csprojAssemblyReference.cache
 C:\Users\New User\Documents\Final Project\PriceWatch\PriceWatch\obj\Debug\PriceWatch.csproj.CoreCompileInputs.cache
 C:\Users\New User\Documents\Final Project\PriceWatch\PriceWatch\obj\Debug\PriceWatch.csproj.CopyComplete
 C:\Users\New User\Documents\Final Project\PriceWatch\PriceWatch\obj\Debug\PriceWatch.dll

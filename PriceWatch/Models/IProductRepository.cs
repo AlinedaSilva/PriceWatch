@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PriceWatch.Models
 {
-    interface IProductRepository
+    public interface IProductRepository
     {
         Task<IEnumerable<ProductViewModel>> GetProductsAsync(string query, int offset, int limit = 10);
     }

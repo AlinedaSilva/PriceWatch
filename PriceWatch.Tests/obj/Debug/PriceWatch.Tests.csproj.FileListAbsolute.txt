@@ -33,3 +33,16 @@ C:\Users\New User\Documents\Final Project\PriceWatch\PriceWatch.Tests\obj\Debug\
 C:\Users\New User\Documents\Final Project\PriceWatch\PriceWatch.Tests\obj\Debug\PriceWatch.Tests.csproj.CopyComplete
 C:\Users\New User\Documents\Final Project\PriceWatch\PriceWatch.Tests\obj\Debug\PriceWatch.Tests.dll
 C:\Users\New User\Documents\Final Project\PriceWatch\PriceWatch.Tests\obj\Debug\PriceWatch.Tests.pdb
+C:\Users\New User\Documents\Final Project\PriceWatch\PriceWatch.Tests\bin\Debug\EntityFramework.dll
+C:\Users\New User\Documents\Final Project\PriceWatch\PriceWatch.Tests\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\New User\Documents\Final Project\PriceWatch\PriceWatch.Tests\bin\Debug\Ninject.dll
+C:\Users\New User\Documents\Final Project\PriceWatch\PriceWatch.Tests\bin\Debug\Ninject.Web.Common.dll
+C:\Users\New User\Documents\Final Project\PriceWatch\PriceWatch.Tests\bin\Debug\Ninject.Web.Common.WebHost.dll
+C:\Users\New User\Documents\Final Project\PriceWatch\PriceWatch.Tests\bin\Debug\Ninject.Web.Mvc.dll
+C:\Users\New User\Documents\Final Project\PriceWatch\PriceWatch.Tests\bin\Debug\WebActivatorEx.dll
+C:\Users\New User\Documents\Final Project\PriceWatch\PriceWatch.Tests\bin\Debug\EntityFramework.xml
+C:\Users\New User\Documents\Final Project\PriceWatch\PriceWatch.Tests\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\New User\Documents\Final Project\PriceWatch\PriceWatch.Tests\bin\Debug\Ninject.xml
+C:\Users\New User\Documents\Final Project\PriceWatch\PriceWatch.Tests\bin\Debug\Ninject.Web.Common.xml
+C:\Users\New User\Documents\Final Project\PriceWatch\PriceWatch.Tests\bin\Debug\Ninject.Web.Common.WebHost.xml
+C:\Users\New User\Documents\Final Project\PriceWatch\PriceWatch.Tests\bin\Debug\Ninject.Web.Mvc.xml
