@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28306.52
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriceWatch", "PriceWatch\PriceWatch.csproj", "{1540403A-7940-43FC-8814-56B07E1A3344}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriceWatch.Tests", "PriceWatch.Tests\PriceWatch.Tests.csproj", "{CD198DB2-10D8-4665-BFF4-8A3AA0ACA119}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1540403A-7940-43FC-8814-56B07E1A3344}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1540403A-7940-43FC-8814-56B07E1A3344}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1540403A-7940-43FC-8814-56B07E1A3344}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1540403A-7940-43FC-8814-56B07E1A3344}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD198DB2-10D8-4665-BFF4-8A3AA0ACA119}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD198DB2-10D8-4665-BFF4-8A3AA0ACA119}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD198DB2-10D8-4665-BFF4-8A3AA0ACA119}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD198DB2-10D8-4665-BFF4-8A3AA0ACA119}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0229A2F9-A8A6-4192-A3C0-33C2366DA04C}
+	EndGlobalSection
+EndGlobal
