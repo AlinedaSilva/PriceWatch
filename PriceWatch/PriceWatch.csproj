@@ -154,6 +154,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\IProductRepository.cs" />
+    <Compile Include="Models\PriceWatch.cs" />
+    <Compile Include="Models\PriceWatchEntry.cs" />
     <Compile Include="Models\ProductRepository.cs" />
     <Compile Include="Models\ProductViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
