@@ -1,0 +1,143 @@
+﻿@model IEnumerable<PriceWatch.Models.ProductViewModel>
+
+
+@{
+    int productCount = Model.Count();
+    ViewBag.title = $"Products";
+}
+<br>
+<div class="container-fluid mt-1">
+    @using (Html.BeginForm("Get", "Product", FormMethod.Get, new { @class = "form=inline" }))
+    {
+        <input class=" = form-control" type="text" placeholder="Enter your product query" name="query" id="query">
+        @Html.Hidden("offset", 0);
+        <button type="submit" class="btn btn-primary">Search <span class="glyphicon glyphicon-search" aria-hidden="true"></span><span /></button>
+    }
+</div>
+
+<h2>ViewBag.Title</h2>
+<div class="table-responsive"></div>
+<table class="table">
+    <tr>
+        @*<th>
+                @Html.DisplayNameFor(model => model.Tpnb)
+            </th>*@
+        <th>
+            Department
+        </th>
+        <th>
+            Name
+        </th>
+        <th>
+            Price
+        </th>
+
+        @*<th>
+                @Html.DisplayNameFor(model => model.ImageUrl)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SuperDepartment)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ContentsMeasureType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UnitOfSale)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AverageSellingUnitWeight)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UnitQuantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ContentsQuantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Department)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UnitPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HasPriceWatch)
+            </th>*@
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            @*<td>
+                    @Html.DisplayFor(modelItem => item.Tpnb)
+                </td>*@
+            <td>
+                <img src="@item.ImageUrl" class="img-thumbnail" />
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SuperDepartment)
+            </td>
+            @*<td>
+                    @Html.DisplayFor(modelItem => item.ContentsMeasureType)
+                </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            @*<td>
+                    @Html.DisplayFor(modelItem => item.UnitOfSale)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AverageSellingUnitWeight)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UnitQuantity)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ContentsQuantity)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Department)
+                </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            @*<td>
+                    @Html.DisplayFor(modelItem => item.UnitPrice)
+                </td>*@
+            @*<td>
+                    @Html.DisplayFor(modelItem => item.HasPriceWatch)
+                </td>*@
+            <td>
+                @{
+                    string priceWatchButtonDesc = item.HasPriceWatch ? "Added to Price Watch" : "Add to Price Watch";
+                    string priceWatchButtonColor = item.HasPriceWatch ? "success" : "primary";
+                    string action = item.HasPriceWatch ? "List" : "Create";
+                }
+            <td>
+                <a href="@Url.Action(action, "PriceWatch", new { productId = item.Id, price = item.Price, productName = item.Name, productDescription = item.Description, imageUrl = item.ImageUrl })" class="btn btn-@priceWatchButtonColor">
+                    @priceWatchButtonDesc
+                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+                </a>
+            </td>
+        </tr>
+    }
+
+</table>
+<div />
+@{
+    string query = ViewContext.RouteData.Values["query"].ToString();// the products passing to the screen
+    int offset = Convert.ToInt32(ViewContext.RouteData.Values["offset"].ToString());// needs the information to put the 10 product
+    string nextButtonEnabledClass = productCount == 0 ? "disabled" : "";
+    string previousButtonEnabledClass = offset == 0 ? "disabled" : "";
+}
+@* Button action get method, product controller query is passing in the method to call the products in tesco api,  offset is 10 product list showing in the page the formula below is the offset showing on the page - or + the offset showing in the previous or next page this means the results will be 10 more product, each time that we call the tesco api just call for 10 products each time if we clic on the next or previous button we call 10 more or 10 less products.*@"
+<div class=" text-center center-block">
+    <a href="@Url.Action("Get", "Product", new { query = query, offset = offset - Model.Count() })" class="btn btn-group-lg btn-primary @previousButtonEnabledClass"><< Previous</a>
+    <a href="@Url.Action("Get", "Product", new { query = query, offset = offset + Model.Count() })" class="btn btn-group-lg btn-primary @nextButtonEnabledClass"><< Next</a>
+</div>
