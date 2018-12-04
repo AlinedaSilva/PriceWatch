@@ -158,6 +158,7 @@
     <Compile Include="Models\PriceWatch.cs" />
     <Compile Include="Models\PriceWatchEntry.cs" />
     <Compile Include="Models\PriceWatchEntryViewModel.cs" />
+    <Compile Include="Models\PriceWatchRepository.cs" />
     <Compile Include="Models\PriceWatchViewModel.cs" />
     <Compile Include="Models\ProductRepository.cs" />
     <Compile Include="Models\ProductViewModel.cs" />
