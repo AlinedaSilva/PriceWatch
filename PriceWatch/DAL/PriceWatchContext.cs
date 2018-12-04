@@ -21,5 +21,7 @@ namespace PriceWatch.DAL
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         }
+
+        public System.Data.Entity.DbSet<PriceWatch.Models.ProductViewModel> ProductViewModels { get; set; }
     }
 }
