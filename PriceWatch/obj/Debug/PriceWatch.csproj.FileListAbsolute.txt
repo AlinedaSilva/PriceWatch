@@ -90,3 +90,4 @@ C:\Users\New User\Documents\Final Project\PriceWatch\PriceWatch\bin\Ninject.xml
 C:\Users\New User\Documents\Final Project\PriceWatch\PriceWatch\bin\Ninject.Web.Common.xml
 C:\Users\New User\Documents\Final Project\PriceWatch\PriceWatch\bin\Ninject.Web.Common.WebHost.xml
 C:\Users\New User\Documents\Final Project\PriceWatch\PriceWatch\bin\Ninject.Web.Mvc.xml
+C:\Users\New User\Documents\Final Project\PriceWatch\PriceWatch\obj\Debug\PriceWatch.csprojAssemblyReference.cache
