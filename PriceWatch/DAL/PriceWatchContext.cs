@@ -12,12 +12,11 @@ namespace PriceWatch.DAL
     {
         public PriceWatchContext() : base("PriceWatchContext")
         {
-
         }
        
         public DbSet<PriceWatchViewModel> PriceWatches {get;set;}
-
         public DbSet<PriceWatchEntry> PriceWatchEntries { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();

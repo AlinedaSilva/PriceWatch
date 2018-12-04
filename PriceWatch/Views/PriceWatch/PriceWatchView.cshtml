@@ -1,0 +1,106 @@
+﻿@model IEnumerable<PriceWatch.Models.PriceWatchViewModel>
+
+@{
+    ViewBag.Title = "My Price Watch";
+}
+
+<h2>My Price Watch (@Model.Count() entries)</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+        </th>
+        <th>
+            Name
+        </th>
+        <th>
+            Created
+        </th>
+        <th>
+            Last Updated
+        </th>
+        <th>
+            Current Price
+        </th>
+        <th></th>
+        <th></th>
+        <th></th>
+    </tr>
+
+
+    @{int count = 0;}
+
+    @foreach (var item in Model)
+    {
+        <tr class="bg=@item.PriceIndicatorBgColor">
+            <td>
+                <img src="@item.ImageUrl" class="img-thumbnail" />
+
+            <td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreationDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastUpdate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastPrice)
+            </td>
+            <td>
+                <span class="@item.PriceIndicatorGlyphicon" aria-hidden="true"></span>
+            </td>
+            <td>
+                <a class="btn btn-primary" data-toggle="collapse" href="#collapse_@count" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    Details
+                </a>
+            </td>
+
+            <td>
+                <a class="btn btn-danger" href="@Url.Action("Remove","PriceWatch", new {id = item.Id})">
+                    <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                    Remove
+                </a>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="7">
+                <div class="collapse" id="collapse_@count">
+                    <table class="table">
+                        <tr>
+                            <th>
+                            </th>
+                            <th>
+                                Price
+                            </th>
+                            <th>
+                                Date
+                            </th>
+                        </tr>
+                        @foreach (var detail in item.Entries)
+                        {
+                            <tr class="bg-@detail.PriceIndicatorBgColor">
+                                <td>
+                                    <span class="@detail.PriceIndicatorGlyphicon" aria-hidden="true"></span>
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => detail.Price)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => detail.Date)
+                                </td>
+                            </tr>
+                        }
+                    </table>
+                </div>
+            </td>
+        </tr>
+
+        count++;
+    }
+
+</table>
